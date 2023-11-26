@@ -12,8 +12,8 @@
  
  
 ## Tecnologia utilizadas
-   *HTML
-   *CSS
-   *JAVASCRIPT
-   *BOOTSTRAP
-   *JQUERY
+   * HTML
+   * CSS
+   * JAVASCRIPT
+   * BOOTSTRAP
+   * JQUERY
