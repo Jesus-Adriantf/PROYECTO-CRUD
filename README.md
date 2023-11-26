@@ -8,6 +8,6 @@
 
 
  ##### Aplicación
- ![screenShotInsert](./img/img1.PNG)
+ ![screenShotInsert](/img/img1.PNG)
  
  
