@@ -8,12 +8,6 @@
 
 
  ##### Aplicación
- ![screenShotInsert](/img/img1.png)
+ ![screenShotInsert](./img/img1.PNG)
  
  
-## Tecnologia utilizadas
-   * HTML
-   * CSS
-   * JAVASCRIPT
-   * BOOTSTRAP
-   * JQUERY
