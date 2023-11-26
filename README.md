@@ -11,3 +11,9 @@
  ![screenShotInsert](/img/img1.png)
  
  
+## Tecnologia utilizadas
+   *HTML
+   *CSS
+   *JAVASCRIPT
+   *BOOTSTRAP
+   *JQUERY
