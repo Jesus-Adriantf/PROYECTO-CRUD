@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CRUD</title>
+  <link rel="stylesheet" href="./lib/bootstrap.min.css" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./snackbar.css" />
+</head>
+
+<body>
+  <div class="page">
+    <div class="page-heading">
+      <span>Insertar, Ver, Editar y Eliminar Registros</span>
+    </div>
+    <div class="page-contant">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="card">
+              <div class="card-body">
+                <div class="card-heading">
+                  <span>Ver registros</span>
+                </div>
+                <div class="card-content">
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">NOMBRE</th>
+                        <th scope="col">EDAD</th>
+                        <th scope="col">EDIT</th>
+                        <th scope="col">DELETE</th>
+                      </tr>
+                    </thead>
+                    <tbody id="generatedTableData"></tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card special-form-card">
+              <div class="card-body">
+                <div class="card-heading">
+                  <span id="insert-heading">Insertar nuevos registros</span>
+                  <span id="edit-heading">Actualizar registros existentes</span>
+                </div>
+                <div class="card-content">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="nameField" placeholder="Escribir Nombre" />
+                  </div>
+                  <div class="form-group">
+                    <input type="number" class="form-control" id="ageField" placeholder="Escribir Edad" />
+                  </div>
+                  <div class="form-actions">
+                    <button id="insert-btn" type="submit" onclick="createNewRecord()" class="btn btn-success">
+                      Enviar
+                    </button>
+                    <button id="edit-btn" type="submit" class="btn btn-info" onclick="updateButtonPress()">
+                      Actualizar
+                    </button>
+                    <button id="edit-cnl-btn" type="submit" class="btn btn-danger margin-left-2x"
+                      onclick="updateCancelButton()">
+                      Cancel
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="snackbar"></div>
+  
+  <!-- delete-model -->
+  <div class="modal fade" id="deleteModalCenter" tabindex="-1" role="dialog" aria-labelledby="deleteModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="deleteModalLongTitle">Borrar récord</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Quieres borrar el registro de la tabla.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal" id="deleteModelBtn">
+            Eliminar
+          </button>
+          <button id="deleteCnlModelBtn" type="button" class="btn btn-secondary" data-dismiss="modal">
+            Cancel
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /delete-model -->
+  <script src="./lib/jquery.min.js"></script>
+  <script src="./lib/popper.min.js"></script>
+  <script src="./lib/bootstrap.min.js"></script>
+  <script src="./app.js"></script>
+</body>
+
+</html>
